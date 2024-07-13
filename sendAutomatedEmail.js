@@ -1,11 +1,11 @@
 function sendAutomatedEmail() {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Restart JBoss Pega Teller');
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Testing Send Automatic Email');
 
   var recipient = "INPUT TO MAIL HERE"; // Replace with the recipient's email address
   var ccRecipient = "INPUT CC MAIL HERE"; // Replace with the actual CC email address
 
-  var dateRange = sheet.getRange("B39:B41"); // Date
-  var subjectRange = sheet.getRange("J39:J41"); // Subject
+  var dateRange = sheet.getRange("B2:4"); // Date
+  var subjectRange = sheet.getRange("J2:J4"); // Subject
 
   // Get the values from the specified ranges
   var dateValues = dateRange.getValues();
